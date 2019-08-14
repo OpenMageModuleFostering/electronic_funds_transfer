@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Electronic_Funds_Transfer</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Provide Electronic Funds Transer like NEFT or RTGS</summary>
+    <description>Provide Electronic Funds Transfer by entering the Transaction Number on the Checkout Page.</description>
+    <notes>Stable Release</notes>
+    <authors><author><name>Dev</name><user>Dev4u</user><email>workdesk4u@gmail.com</email></author></authors>
+    <date>2013-05-30</date>
+    <time>07:38:26</time>
+    <contents><target name="magelocal"><dir name="Rtgs"><dir name="Pay"><dir name="Block"><dir name="Form"><file name="Pay.php" hash="488ef98783f512986654a2be20a66766"/></dir><dir name="Info"><file name="Pay.php" hash="45b0af4f4d86241ada74a33bd4891bc7"/></dir></dir><dir name="Helper"><file name="Data.php" hash="3e40fed52b36000ca5bcea9caf385060"/></dir><dir name="Model"><file name="Pay.php" hash="9ac22d2359d18e49a5fb4a3683205d5a"/></dir><dir name="etc"><file name="config.xml" hash="7731d31214501e765a8ebad25fbeb2ea"/><file name="system.xml" hash="56aee6b813d8459712abb506a53252bd"/></dir><dir name="sql"><dir name="pay_setup"><file name="mysql4-install-0.1.0.php" hash="8b63362cf355c08ea5208052ecf34873"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="em0006"><dir name="template"><dir name="pay"><dir><dir name="form"><file name="pay.phtml" hash="f7a8d939560e8859328a68113d1654d1"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Rtgs_Pay.xml" hash="1a06cb7060056e9266eec14e81e38e28"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,43 @@
+ 
+<?php 
+
+	$_code					= $this->getMethodCode();
+	$beneficiaryName		= Mage::getModel('core/variable')->loadByCode(BNF_NAME)->getValue();
+	$beneficiaryBankDetails	= Mage::getModel('core/variable')->loadByCode(BNF_BANK_DETAILS)->getValue();
+	$beneficiaryAccountNo	= Mage::getModel('core/variable')->loadByCode(BNF_ACCOUNT_NO)->getValue();
+	$beneficiaryIfscCode	= Mage::getModel('core/variable')->loadByCode(BNF_IFSC_CODE)->getValue();
+
+?>
+<div>
+	<table>
+		<tr>
+			<ul class="form-list" id="payment_form">
+				<li>
+					<h1>Beneficiary Details</h1>
+					<label><h5>Name :</h5></label>
+					<span>&nbsp;<?php echo $beneficiaryName ?></span>
+				</li>					
+				<li>
+					<label><h5>Bank Name & Address :</h5></label>
+					<span>&nbsp;<?php echo $beneficiaryBankDetails ?></span>
+				</li>
+				<li>
+					<label><h5>Bank Account No :</h5></label>
+					<span>&nbsp;<?php echo $beneficiaryAccountNo ?></span>
+				</li>
+				<li>
+					<label><h5>Bank IFSC Code :</h5></label>
+					<span>&nbsp;<?php echo $beneficiaryIfscCode ?></span>
+				</li>
+			</ul>
+		</tr>
+	</table>
+</div>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li>
+        <label for="<?php echo $_code ?>_transaction_no" class="required"><em>*</em><?php echo $this->__('Transaction No#') ?></label>
+        <span class="input-box">
+            <input type="text" title="<?php echo $this->__('Transaction No#') ?>" class="input-text required-entry" id="<?php echo $_code ?>_transaction_no" name="payment[transaction_no]" value="<?php echo $this->htmlEscape($this->getInfoData('transaction_no')) ?>" />
+        </span>
+    </li>
+</ul>

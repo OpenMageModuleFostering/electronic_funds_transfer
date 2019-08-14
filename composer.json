@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Electronic_Funds_Transfer",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Provide Electronic Funds Transer like NEFT or RTGS",
+    "authors": [
+    {
+        "name": "Dev",
+        "email": "workdesk4u@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
